@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./HomePage";
-// import RecipesPage from "./RecipesPage";  // Placeholder for recipes page
+import RecipesPage from "./RecipesPage";
 import AddRecipe from "./AddRecipe";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        {/* <Route path="/recipes" element={<RecipesPage />} /> */}
+        <Route path="/recipes" element={<RecipesPage />} />
         <Route path="/add-recipe" element={<AddRecipe />} />
       </Routes>
     </Router>
