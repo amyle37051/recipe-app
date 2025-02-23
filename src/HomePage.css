@@ -3,7 +3,8 @@
     flex-direction: column;
     justify-content: center; /* Centers vertically */
     align-items: center; /* Centers horizontally */
-    height: 100vh; /* Full screen height */
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw; /* Full width of the viewport */
     text-align: center;
   }
   
