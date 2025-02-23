@@ -1,15 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "./HomePage";  // Adjust path if needed
+import HomePage from "./HomePage";
 // import RecipesPage from "./RecipesPage";  // Placeholder for recipes page
-// import AddRecipePage from "./AddRecipePage";  // Placeholder for add recipe page
+import AddRecipe from "./AddRecipe";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        {/* <Route path="/recipes" element={<RecipesPage />} />
-        <Route path="/add-recipe" element={<AddRecipePage />} /> */}
+        {/* <Route path="/recipes" element={<RecipesPage />} /> */}
+        <Route path="/add-recipe" element={<AddRecipe />} />
       </Routes>
     </Router>
   );
