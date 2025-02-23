@@ -1,12 +1,12 @@
 import { useState } from "react";
-import Bolognese from "./recipes/Bolognese";
-import BananaBread from "./recipes/BananaBread";
-import Brioche from "./recipes/Brioche";
+import Bolognese from "./recipes/Bolognese.tsx";
+// import BananaBread from "./recipes/BananaBread.tsx";
+// import Brioche from "./recipes/Brioche.tsx";
 
 const recipes = [
   { name: "Spaghetti Bolognese", component: <Bolognese /> },
-  { name: "Avocado Toast", component: <BananaBread /> },
-  { name: "Chicken Curry", component: <Brioche /> },
+//   { name: "Avocado Toast", component: <BananaBread /> },
+//   { name: "Chicken Curry", component: <Brioche /> },
 ];
 
 const RecipeList = () => {
