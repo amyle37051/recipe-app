@@ -1,16 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./HomePage.css"; // Import CSS for styling
 
 function HomePage() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen gap-4">
-      <h1 className="text-3xl font-bold">Welcome to Recipe Finder</h1>
-      <div className="flex gap-4">
+    <div className="homepage-container">
+      <h1>Welcome to Recipe Finder</h1>
+      <div className="button-container">
         <Link to="/recipes">
-          <button className="px-4 py-2 bg-blue-500 text-white rounded">View Recipes</button>
+          <button className="view-recipes">View Recipes</button>
         </Link>
         <Link to="/add-recipe">
-          <button className="px-4 py-2 bg-green-500 text-white rounded">Add Recipe</button>
+          <button className="add-recipe">Add Recipe</button>
         </Link>
       </div>
     </div>

@@ -1,0 +1,33 @@
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers vertically */
+    align-items: center; /* Centers horizontally */
+    height: 100vh; /* Full screen height */
+    text-align: center;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 20px; /* Space between buttons */
+    margin-top: 20px; /* Space from heading */
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .view-recipes {
+    background-color: blue;
+    color: white;
+  }
+  
+  .add-recipe {
+    background-color: green;
+    color: white;
+  }
+  
