@@ -1,17 +1,23 @@
 .form-container {
     width: 50%;
-    margin: 50px auto;
+    max-width: 500px; /* Prevents it from being too wide */
+    margin: 50px auto; /* Centres it horizontally */
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensures inner content is centred */
   }
   
   form {
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 10px;
   }
+  
   
   input, textarea {
     width: 100%;
