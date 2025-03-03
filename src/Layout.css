@@ -2,15 +2,21 @@
     display: flex;
   }
   
-  .sidebar {
-    width: 250px;
+  .app-container {
+    display: flex;
     height: 100vh;
+  }
+  
+  .sidebar {
+    width: 250px; /* Adjust as needed */
     background: #1e1e1e;
     color: white;
     padding: 20px;
-    position: fixed;
-    left: 0;
-    top: 0;
+  }
+  
+  .main-content {
+    flex-grow: 1; /* Ensures it takes up the remaining space */
+    padding: 20px;
   }
   
   .sidebar ul {

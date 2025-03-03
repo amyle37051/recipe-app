@@ -1,16 +1,19 @@
-import { Outlet } from "react-router-dom";
-import Sidebar from "./Sidebar";
-import "./Layout.css";
+import { Outlet, Link } from "react-router-dom";
 
-const Layout = () => {
+export default function Layout() {
   return (
-    <div className="layout-container">
-      <Sidebar />
-      <div className="content">
-        <Outlet /> {/* This renders child routes dynamically */}
-      </div>
+    <div className="app-container">
+      <nav className="sidebar">
+        <h2>Recipe Finder</h2>
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/recipes">Recipes</Link></li>
+          <li><Link to="/add-recipe">Add Recipe</Link></li>
+        </ul>
+      </nav>
+      <main className="main-content">
+        <Outlet />
+      </main>
     </div>
   );
-};
-
-export default Layout;
+}

@@ -1,9 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Layout from "./Layout.tsx";
-import HomePage from "./HomePage";
+import HomePage from "./HomePage"; // Ensure this file exists
 import RecipesPage from "./RecipesPage";
-import AddRecipePage from "./AddRecipe";
+import AddRecipe from "./AddRecipe";
 import Bolognese from "./recipes/Bolognese";
+import Layout from "./Layout";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="recipes" element={<RecipesPage />} />
-          <Route path="add-recipe" element={<AddRecipePage />} />
+          <Route path="add-recipe" element={<AddRecipe />} />
           <Route path="recipes/bolognese" element={<Bolognese />} />
         </Route>
       </Routes>
