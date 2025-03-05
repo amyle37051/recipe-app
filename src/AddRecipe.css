@@ -5,8 +5,9 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #1e1e1e; /* Dark background */
-    color: white;
+    /*background-color: #1e1e1e; /* Dark background */
+    background: none;
+    /* color: white; */
   }
   
   /* Styles the form itself */
@@ -62,3 +63,6 @@
     min-height: 100vh;
   }
   
+/* .add-recipe {
+  background-color: #1e1e1e;
+} */
